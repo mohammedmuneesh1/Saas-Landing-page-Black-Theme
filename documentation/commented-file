@@ -1,0 +1,17 @@
+/* @theme {
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+    --screen-2xl: 1536px;
+
+} */
+/* 
+@layer components {
+    .custom-layout {
+        @apply max-w-[1900px] w-full mx-auto px-4 sm:px-6 lg:px-8;
+    }
+    .custom-layout-padding{
+        @apply px-4 sm:px-6 lg:px-8 py-24;
+    }
+} */
