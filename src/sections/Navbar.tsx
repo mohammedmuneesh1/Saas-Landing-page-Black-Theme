@@ -39,8 +39,8 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <section className="relative z-10 py-5">
-        <div className="custom-layout">
+      <section className=" z-10 py-5 sticky top-0 z-50">
+        <div className="relative custom-layout ">
           <div className="grid grid-cols-2 lg:grid-cols-3 items-center border border-white/10 rounded-full bg-white/[0.03] backdrop-blur-md px-2 py-2.5">
             {/* LOGO */}
             <div>
@@ -109,7 +109,7 @@ export default function Navbar() {
 
       {/* MOBILE SIDEBAR */}
       <div
-        className={`fixed top-0 right-0 h-screen w-[80%] max-w-sm z-50 flex flex-col p-6 bg-[rgba(13,13,25,0.97)] backdrop-blur-xl border-l border-white/10 
+        className={`fixed top-0 right-0 h-screen w-[80%] max-w-lg z-50 flex flex-col p-6 bg-[rgba(13,13,25,0.97)] backdrop-blur-xl border-l border-white/10 
           transition-transform duration-300 
           ${
           isOpen ? "translate-x-0" : "translate-x-full"
