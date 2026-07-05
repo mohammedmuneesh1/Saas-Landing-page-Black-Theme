@@ -1,21 +1,35 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { twMerge } from 'tailwind-merge';
-
+import {motion} from 'framer-motion'
 const IntegrationColumn = (props:{
     //eslint-disable-next-line
     integrations:Array<any>
     className?:string;
+    reverse?:boolean,
 }) => {
 
-    const {integrations,className} = props
+    const {integrations,className,reverse} = props
 
   return (
-           <div className={twMerge("flex flex-col gap-4 pb-4 ",className)}>
+           <motion.div
+  initial={{ y: reverse ? '-50%' : '0%' }}
+  animate={{
+    y: reverse ? '0%' : '-50%',
+  }}
+  transition={{
+    duration: 20,
+    repeat: Infinity,
+    ease: "linear",
+  }}
+  className={twMerge("flex flex-col gap-4 pb-4", className)}
+>
+
                 {
-                    integrations?.map((integration) => (
+                    [...integrations,...integrations]?.map((integration,index:number) => (
                         <div
-                         key={integration.name}
+                         key={`${integration.name}-${index}`}
                          className="bg-neutral-900 border-white/10 rounded-3xl p-6"
                          >
                             <div className="flex justify-center ">
@@ -35,7 +49,7 @@ const IntegrationColumn = (props:{
                         </div>
                     ))
                 }
-            </div>
+            </motion.div>
   )
 }
 

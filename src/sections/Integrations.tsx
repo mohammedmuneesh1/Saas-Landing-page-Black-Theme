@@ -1,5 +1,4 @@
 import Tag from "@/components/Tag";
-import Image from "next/image";
 
 import figmaIcon from "@/assets/images/figma-logo.svg"
 import notionIcon from "@/assets/images/notion-logo.svg"
@@ -8,6 +7,7 @@ import relumeIcon from "@/assets/images/relume-logo.svg"
 import framerIcon from "@/assets/images/framer-logo.svg"
 import githubIcon from "@/assets/images/github-logo.svg"
 import IntegrationColumn from "@/components/IntegrationColumn";
+
 
 const integrations = [
     { name: "Figma", icon: figmaIcon, description: "Figma is a collaborative interface design tool." },
@@ -45,6 +45,7 @@ integrations={integrations}
 <IntegrationColumn
 integrations={integrations?.slice()?.reverse()}
 className="md:flex hidden"
+reverse
 /> 
 </div>
 {/* INTEGRATIONS END */}

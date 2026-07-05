@@ -21,7 +21,6 @@ export default function Home() {
         <Faqs/>
         <CallToAction/>
         <Footer/>
-
     </div>
 );
 }

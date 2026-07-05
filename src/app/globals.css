@@ -6,6 +6,11 @@
 
 
 
+/*to make the faq goes from top to bottom*/
+.faq-list{
+    overflow-anchor: none;
+}
+
 .custom-layout {
   max-width: 1900px;
   width: 100%;
@@ -48,3 +53,6 @@
   }
 
 }
+
+
+

@@ -45,3 +45,29 @@ div className="overflow-hidden>
 4) creating space on top with fixed navbar
 
 <div className="pb-[86px] md:pb-[98px] >
+
+
+
+4) framer motion x and y 
+
+           -Y (up)
+             ↑
+             |
+-X (left) ← (0,0) → +X (right)
+             |
+             ↓
+           +Y (down)
+
+
+
+
+5) y: [0, -160, 0]
+
+
+Original
+    ↓
+160px Down
+    ↑
+Original
+
+
